@@ -1,13 +1,151 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  overflow: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App{
+  background-color: black;
+  padding: 40px;
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 85vh;
+}
+
+.main{
+  box-sizing: border-box;
+  background-color: blanchedalmond;
+  width: 50%;
+  height:80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.tenz{
+  box-sizing: border-box;
+  border: 1px solid none;
+  box-shadow: 2px 2px 4px gray;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.die{
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 2;
+  gap: 20px;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+button{
+  background-color: rgb(112, 112, 245);
+  width: 150px;
+  border: none;
+  font-family: 'Times New Roman', Times, serif;
+  color: #fff;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0px 0px 4px gray;
+  border-radius: 10px;
+}
+
+p{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+@media(max-width:500px){
+  .App{
+    background-color: black;
+    padding: 40px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 85vh;
+  }
+  
+  .main{
+    box-sizing: border-box;
+    background-color: blanchedalmond;
+    width: 100%;
+    height:80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 15px;
+    padding: 10px;
+  }
+  
+  .tenz{
+    box-sizing: border-box;
+    border: 1px solid none;
+    box-shadow: 2px 2px 4px gray;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 13px;
+  }
+  
+  .die{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 2;
+    gap: 10px;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  button{
+    background-color: rgb(112, 112, 245);
+    width: 75px;
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    padding: 10px;
+    font-size: 13px;
+    cursor: pointer;
+    box-shadow: 0px 0px 4px gray;
+    border-radius: 10px;
+  }
+  
+  p{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px;
+  }
+  
+  h1{
+    font-family: 'Times New Roman', Times, serif;
+  }
 }
